@@ -9,13 +9,13 @@ int main(void)
 {
 	char az[26] = "abcdefghijklmnopqrstuvwxyz";
 	int i;
-	
+
 	while (i <= 'z')
 	{
-		if (az == 'e' || az == 'q')
-			++ch;
-		putchar(az);
-		++az;
+		if (i == 'e' || i == 'q')
+			++i;
+		putchar(az[i]);
+		++i;
 	}
 	putchar('\n');
 	return (0);
