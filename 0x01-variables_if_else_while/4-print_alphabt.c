@@ -10,15 +10,13 @@ int main(void)
 	char az[26] = "abcdefghijklmnopqrstuvwxyz";
 	int i;
 
-	while (i <= 'z')
+	for (i=0; i <= 'z'; i++)
 	{
 		if (i != 'e' && i != 'q')
 		{
-			putchar(az);
+			putchar(az[i]);
 		}
-		else
-		{
-		}
+		
 	}
 	putchar('\n');
 	return (0);
