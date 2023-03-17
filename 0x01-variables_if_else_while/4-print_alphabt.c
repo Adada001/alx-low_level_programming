@@ -7,7 +7,7 @@
  */
 int main(void)
 {
-	int az = "abcdefghijklmnopqrstuvwxyz";
+	int az;
 
 	for (az = 'a'; az <= 'z'; az++)
 	{
