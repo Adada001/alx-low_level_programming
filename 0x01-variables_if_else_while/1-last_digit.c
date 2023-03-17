@@ -3,7 +3,10 @@
 #include <time.h>
 /* more headers goes there */
 
-/* betty style doc for function main goes there */
+/* main - check if last digit is greater than 5,
+ * less than 6, or is 0
+ * Return always set at 0
+ * */
 int main(void)
 {
 	int n, ld;
@@ -18,7 +21,7 @@ int main(void)
 	}
 	else if (ld < 6 && ld != 0)
 	{
-		printf("Last digit of %d is %d and is less than 6 and not 0zn", n, ld);
+		printf("Last digit of %d is %d and is less than 6 and not 0\n", n, ld);
 	}
 	else
 	{
