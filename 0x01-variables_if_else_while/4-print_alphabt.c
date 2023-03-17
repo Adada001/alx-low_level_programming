@@ -10,7 +10,7 @@ int main(void)
 	char az[26] = "abcdefghijklmnopqrstuvwxyz";
 	int i;
 	
-	while (ax <= 'z')
+	while (i <= 'z')
 	{
 		if (az == 'e' || az == 'q')
 			++ch;
