@@ -1,20 +1,17 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
-/* more headers goes there */
-
-/* *
- * main - check if last digit is greater than 5, less than 6, or is 0
- * 
- * Return: always set at 0
- * */
+/**
+ * main - checks on the last digit if greater than 5, less than 6, or is 0
+ *
+ * Return: Always 0 (success)
+ */
 int main(void)
 {
 	int n, ld;
 
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
-	/* your code goes there */
 	ld = n % 10;
 	if (ld > 5)
 	{
