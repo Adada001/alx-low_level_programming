@@ -3,9 +3,10 @@
 #include <time.h>
 /* more headers goes there */
 
-/* main - check if last digit is greater than 5,
- * less than 6, or is 0
- * Return always set at 0
+/* *
+ * main - check if last digit is greater than 5, less than 6, or is 0
+ * 
+ * Return: always set at 0
  * */
 int main(void)
 {
