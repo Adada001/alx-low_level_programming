@@ -1,23 +1,25 @@
 #include <stdio.h>
-
+#include <unistd.h>
 /**
- * main - Prints the alphabet except q and e.
- *
- * Return: Always 0 (Success)
+ * main - Entry point
+ * Description: prints lowercase alphabets except q and e
+ * Return: Always 0 (success)
  */
 int main(void)
 {
-	char az[26] = "abcdefghijklmnopqrstuvwxyz";
-	int i;
+	int az = "abcdefghijklmnopqrstuvwxyz";
 
-	for (i=0; i <= 'z'; i++)
+	for (az = 'a'; az <= 'z'; az++)
 	{
-		if (i != 'e' && i != 'q')
+		if (az != 'e' && az != 'q')
 		{
-			putchar(az[i]);
+			putchar(az);
 		}
-		
+		else
+		{
+		}
 	}
 	putchar('\n');
 	return (0);
 }
+
