@@ -1,30 +1,24 @@
-#include<stdio.h>
-
+#include <stdio.h>
+#include <unistd.h>
 /**
- * main - Entry point
+ * main - print base 16
  *
- * Description: print 0, 1, - 9
- *
- * Return: Always 0 (Success)
-*/
-
+ * Return: Always 0 (success)
+ */
 int main(void)
 {
-	int digit = 0;
+	char c;
+	char d = '0';
 
-	while (digit <= 9)
+	while (d <= '9')
 	{
-		putchar(digit + 48);
-
-		if (digit != 9)
-		{
-			putchar(',');
-			putchar(' ');
-		}
-
-		++digit;
+		putchar(d);
+		d++;
+	}
+	for (c = 'a'; c <= 'f'; c++)
+	{
+		putchar(c);
 	}
 	putchar('\n');
-
 	return (0);
 }
