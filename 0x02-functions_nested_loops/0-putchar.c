@@ -1,19 +1,19 @@
 #include "_putchar.h"
-
 /**
- * main - Prints the _putchar.
- *
- * Return: Always 0 (Success)
+ * main - prints '_putchar\n'
+ * Return: Always 0 (success)
  */
 int main(void)
 {
-	char pc[8] = "_putchar";
-	int i;
+char str[] = "_putchar\n";
+int i = 0;
 
-	for (i = 0; i < 8; i++)
+while (str[i] != '\0')
 	{
-		_putchar(pc[i]);
+	char c = str[i];
+
+	_putchar(c);
+	i++;
 	}
-	_putchar('\n');
-	return (0);
+return (0);
 }
