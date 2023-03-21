@@ -1,19 +1,16 @@
-#include "main.h"
+#include <stdio.h>
 /**
  * main - prints '_putchar\n'
  * Return: Always 0 (success)
  */
-int main(void)
-{
-char str[] = "_putchar\n";
-int i = 0;
-
-while (str[i] != '\0')
-	{
-	char c = str[i];
-
-	_putchar(c);
-	i++;
-	}
-return (0);
+int main() {
+    char str[] = "_putchar";
+    int length = sizeof(str) / sizeof(str[0]);
+    
+    for (int i = 0; i < length - 1; i++) {
+        putchar(str[i]);
+    }
+    
+    putchar('\n');
+    return 0;
 }
