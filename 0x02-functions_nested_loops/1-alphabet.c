@@ -1,8 +1,7 @@
-#include <stdio.h>
+#include "holberton.h"
 /**
- * print_alphabet - Entry point
- * Description: a function that prints the alphabet,
- * in lowecase followed by a new line
+ * print_alphabet - prints the alphabet, in lowecase 
+ *
  * Return: void
  */
 void print_alphabet(void)
@@ -11,9 +10,9 @@ void print_alphabet(void)
 
 	while(letter <= 'z')
 	{
-		putchar(letter);
+		_putchar(letter);
 		letter++;
 
 	}
-	putchar('\n');
+	_putchar('\n');
 }
