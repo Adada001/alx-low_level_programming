@@ -2,16 +2,15 @@
 /**
 *jack_bauer-printseveryminuteofthedayofJackBauer
 */
-voidjack_bauer(void)
+void jack_bauer(void)
 {
-inthours,minutes;
+int hours,minutes;
 
-for(hours=0;hours<24;hours++)
+for (hours = 0; hours < 24; hours++)
 {
-for(minutes=0;minutes<60;minutes++)
+for (minutes = 0; minutes < 60; minutes++)
 {
-printf("%.2d:%.2d\n",hours,minutes);
+_putchar("%.2d:%.2d\n", hours, minutes);
 }
 }
 }
-
