@@ -1,10 +1,10 @@
 #include "main.h"
 /**
- * main - check the code for ALX School students.
+ * print_times_table - print multiple times table.
  *
  * Return: Always 0.
  */
-int main(void)
+int print_times_table(void)
 {
     print_times_table(3);
     _putchar('\n');
