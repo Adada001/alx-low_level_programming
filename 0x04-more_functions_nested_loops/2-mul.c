@@ -1,10 +1,11 @@
 /**
- * mul - multiply two ints
+ * mul - multiplies two integers
  *
- * @a: first int
- * @b: second int
- * Return - result
- */
+ * @a: first input
+ * @b: second input
+ *
+ * Return: return results
+*/
 
 int mul(int a, int b)
 {
