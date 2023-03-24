@@ -1,20 +1,22 @@
-#include "main.h"
+#include"main.h"
 
 /**
- * print_line - prints a line
- * @n: variable
+ * print_line - print a straight line
  *
- * Return: 0
- */
+ * @n: is the number of times the lines
+ *     should be printed
+*/
 
 void print_line(int n)
 {
-	int a = 0;
+	int ln;
 
-	while (a < n && n > 0)
+	if (n <= 0)
+		_putchar('\n');
+	else
 	{
-		_putchar('_');
-		a++;
+		for (ln = 1; ln <= n; ++ln)
+			_putchar('_');
+		_putchar('\n');
 	}
-	_putchar('\n');
 }
