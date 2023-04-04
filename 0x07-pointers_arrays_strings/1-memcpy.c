@@ -1,8 +1,8 @@
 /**
- * -memcpy - copy n bytes fro mem src to mem dest
- *  @dest: destination mem area
- *  @src: source memory
- *  @n: number of bytes to copy
+ * -memcpy - copy n bytes from mem area
+ *  @dest: destination mem area to copy to
+ *  @src: mem area to copy from
+ *  @n: number of bytes to copy from @src
  *
  *  Return: pointer to dest.
  */
