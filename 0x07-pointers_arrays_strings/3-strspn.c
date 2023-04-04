@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * _strspn - gets the length of a prefix substring
+ * _strspn - gets the length of a prefix substring.
  * @s: pointer to the string to be searched
  * @accept: pointer to the string containing the characters to search for
  *
@@ -10,25 +10,21 @@
 
 unsigned int _strspn(char *s, char *accept)
 {
-	unsigned int bytes = 0;
-	int index;
+	unsigned int i, j, count = 0;
 
-	while (*s)
+	for (i = 0; s[i]; i++)
 	{
-		for (index = 0; accept[index]; index++)
+		for (j = 0; accept[j]; j++) 
 		{
-			if (*s == accept[index])
+			if (s[i] == accept[j])
 			{
-				bytes++;
+				count++;
 				break;
 			}
-
-			else if (accept[index + 1] == '\0')
-				return (bytes);
 		}
-
-		s++;
+			if (!accept[j])
+				break;
 	}
 
-	return (bytes);
+		return count;
 }
