@@ -8,26 +8,27 @@
  * from accept
  */
 
-unsigned int _strspn(char*s, char *accept)
+unsigned int _strspn(char *s, char *accept)
 {
-	unsigned int i, j, len;
-	
-	len=0;
-	
-	for (i = 0; s[i] != '\0'; i++)
+	unsigned int bytes = 0;
+	int index;
+
+	while (*s)
 	{
-		for (j = 0; accept[j] != '\0'; j++)
-	{
-		if (s[i] == accept[j])
+		for (index = 0; accept[index]; index++)
 		{
-			len++;
-			break;
+			if (*s == accept[index])
+			{
+				bytes++;
+				break;
+			}
+
+			else if (accept[index + 1] == '\0')
+				return (bytes);
 		}
+
+		s++;
 	}
-	
-	if (accept[j] == '\0')
-		return(len);
-	}
-	
-	return(len);
+
+	return (bytes);
 }
