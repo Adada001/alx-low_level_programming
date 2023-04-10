@@ -10,7 +10,7 @@
  * Return: 0
  */
 
-int amin(int argc, char *argv[])
+int main(int argc, char *argv[])
 {
 	char *pn;
 	if (argc > 0)
