@@ -4,7 +4,7 @@
  * main - prints programs name
  *
  * @argc: number of arguments pased
- * @argc: arguments passed
+ * @argv: arguments passed
  *
  * Return: 0
  */
