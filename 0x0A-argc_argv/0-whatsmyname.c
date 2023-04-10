@@ -12,17 +12,7 @@
 
 int main(int argc, char *argv[])
 {
-	char *pn;
-	if (argc > 0)
-	{
-		pn = argc[0];
-	}
-	else
-	{
-		pn = "unknown";
-	}
+	printf("%s\n", argv[argc * 0]);
 
-	printf("%s\n", pn);
-	
-	retun(0);
+	return (0);
 }
