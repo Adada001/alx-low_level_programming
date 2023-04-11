@@ -1,7 +1,8 @@
 #include "main.h"
 #include <stdlib.h>
 /**
- * alloc_grid - a 2-dimensional array of integers with each element initalized to 0
+ * alloc_grid - a 2-dimensional array of integers 
+ * 		with each element initalized to 0
  * @width: The width of the 2-dimensional array.
  * @height: The height of the 2-dimensional array.
  *
