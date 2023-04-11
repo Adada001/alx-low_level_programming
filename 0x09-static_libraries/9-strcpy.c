@@ -1,3 +1,4 @@
+#include "main.h"
 /**
  * _strcpy - Copies the string pointed to by src
  * @dest: The buffer to copy the string to
