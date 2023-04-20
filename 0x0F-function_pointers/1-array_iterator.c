@@ -1,0 +1,19 @@
+/**
+ * array_iterator - executes a function on each element of an array
+ *
+ * @array: pointer to an array of integers
+ * @size: size of the array
+ * @action: pointer to a function that takes an int argument and returns void
+ *
+ * Return: void
+ */
+void array_iterator(int *array, size_t size, void (*action)(int))
+{
+	if (array && action)
+	{
+		for (size_t i = 0; i < size; i++)
+		{
+			action(array[i]);
+		}
+	}
+}
