@@ -6,11 +6,11 @@
  * Return: 0
  */
 
-void -put_recursion(char *s)
+void _put_recursion(char *s)
 {
 	if (*s == '\0')
 	{
-		-putchar('\n');
+		_putchar('\n');
 		return;
 	}
 
