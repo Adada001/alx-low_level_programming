@@ -11,9 +11,10 @@ int _sqrt_helper(int n, int start, int end)
 {
 	if (start > end)
 		return (-1);
-
-	int num = (start + end) / 2;
-	int square = num * num;
+	int num, square;
+	
+	num = (start + end) / 2;
+	square = num * num;
 
 	if (square == n)
 		return (num);
